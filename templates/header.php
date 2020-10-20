@@ -8,22 +8,24 @@
 <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
 
 <!--- LINK CSS FILE -->
-<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" type="text/css" href="style/style.css"/>
 
 </head>
 <body>
-    <div class="wrapper">
-        <!--    navbar starts here      -->
+
+    <!--    navbar starts here      -->
         <nav>
             <span id='brand'>
                 <a href='keethus.github.io/twisteddestiny'>twisted destiny</a>
             </span>
             <ul id="menu">
-                <li><a href="keethus.github.io/twisteddestiny">game<span>.</span></a></li>
+                <li><a href="index.php">game<span>.</span></a></li>
+                <li><a href="register.php">register<span>.</span></a></li>
                 <li><a href="#">scoreboard<span>.</span></a></li>
-                <li><a href="keethus.github.io/guide.html">guide<span>.</span></a></li>
                 <li><a href="https://github.com/keethus/twisteddestiny">github<span>.</span></a></li>
                 
             </ul>
         </nav>
-</body>
+
+        <div id='content'>
+          

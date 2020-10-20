@@ -11,8 +11,9 @@ nav {
     width: 100%;
     background: #0f0f0f;
     height: 80px;
-    position: fixed;
+
     z-index: 1;
+    padding-top:0;
 }
 
 nav #brand {
@@ -37,6 +38,7 @@ nav #menu {
     float: left;
     right: 80px;
     position: fixed;
+    margin-top:0;
 }
 
 nav #menu li {
@@ -59,4 +61,34 @@ nav #menu li a {
 }
 nav #menu li a:hover {
     border-bottom: 1px solid #fff;
+}
+
+#content {
+    background-color: #080808;
+    width: 90%;
+    padding:50px;
+    margin-left: auto;
+    margin-right: auto;
+    height:75%;
+    border: 1px solid;
+    border-color:white;
+}
+
+.formContainer {
+    text-align:center;
+}
+
+.formContainer input {
+    margin-bottom:5px;
+}
+
+.pageTitle h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 20px;
+    font-size:40px;
+}
+
+label {
+    display: inline-block;
 }
