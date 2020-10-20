@@ -1,6 +1,3 @@
-<!doctype html>
-<html>
-<body>
 <?php
 /*
 Twisted Destiny Text RPG
@@ -103,5 +100,3 @@ else {
 }
 require('templates/footer.php');
 ?>
-</body>
-</html>
