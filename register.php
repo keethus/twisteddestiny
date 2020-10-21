@@ -76,7 +76,16 @@ echo "<p style='text-align: center;'>".$output."</p>";
     <form action='./register.php' method='POST'>
         Username: <input type='text' name='username' /><br />
         Password: <input type='password' name='password' /><br />
-        <input type='submit' name='register' value='Register' />
+        <input type='submit' 
+            style='color: #494949 !important;
+            text-transform: uppercase;
+            text-decoration: none;
+            background: #ffffff;
+            padding: 20px;
+            border: 4px solid #494949 !important;
+            display: inline-block;
+            transition: all 0.4s ease 0s;' 
+            name='register' value='Register' />
     </form>
 </div>
 
