@@ -92,3 +92,18 @@ nav #menu li a:hover {
 label {
     display: inline-block;
 }
+
+.centerDiv {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    text-align: center;
+}
+table {
+    margin-top:100px;
+    margin-left: auto;
+    margin-right: auto;
+
+}

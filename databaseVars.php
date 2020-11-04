@@ -1,7 +1,7 @@
 <?php
 $host = 'localhost';
-$username = 'twisteddestiny_user';
+$username = 'ifmsfmkg_twisteddestiny';
 $password = 'twd2020';
-$database = 'twisteddestiny';
+$database = 'ifmsfmkg_twisteddestiny';
 
 ?>

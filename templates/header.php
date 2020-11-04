@@ -14,18 +14,34 @@
 <body>
 
     <!--    navbar starts here      -->
-        <nav>
-            <span id='brand'>
-                <a href='keethus.github.io/twisteddestiny'>twisted destiny</a>
-            </span>
-            <ul id="menu">
-                <li><a href="index.php">game<span>.</span></a></li>
-                <li><a href="register.php">register<span>.</span></a></li>
-                <li><a href="#">scoreboard<span>.</span></a></li>
-                <li><a href="https://github.com/keethus/twisteddestiny">github<span>.</span></a></li>
-                
-            </ul>
-        </nav>
-
+    <?php
+    if(isset($_SESSION['user_id'])) {
+        echo '<nav>
+                <span id="brand">
+                <a href="keethus.github.io/twisteddestiny">twisted destiny</a>
+                </span>
+                    <ul id="menu">
+                        <li><a href="?page=arena">arena<span>.</span></a></li>
+                        <li><a href="?page=profile">profile<span>.</span></a></li>
+                        <li><a href="?page=attack_shop">buy attacks<span>.</span></a></li>
+                        <li><a href="?page=potion_shop">buy potions<span>.</span></a></li>
+                        <li><a href="?page=create_monster">create monster<span>.</span></a></li>
+                        <li><a href="?page=create_attack">create attack<span>.</span></a></li>
+                    </ul>
+                </nav>';
+    
+    }
+    else{
+        echo '<nav>
+                <span id="brand">
+                <a href="keethus.github.io/twisteddestiny">twisted destiny</a>
+                </span>
+                    <ul id="menu">
+                        <li><a href="register.php">login<span>.</span></a></li>     
+                        <li><a href="register.php">register<span>.</span></a></li>                        
+                    </ul>
+                </nav>';
+    }
+    ?>
         <div id='content'>
           

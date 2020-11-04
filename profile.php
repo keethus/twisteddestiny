@@ -14,9 +14,9 @@ function profile() {
     <b><label style='width:9em;'>Coins:</label></b> {$player->coins}<br /><br />
     <b><label style='width:9em;'>Strength:</label></b> {$player->strength}<br />
     <b><label style='width:9em;'>Intelligence:</label></b> {$player->intelligence}<br />
-    <b><label style='width:9em;'>Endurance:</label></b> {$player->endurance}<br /><br />
-    <b><label style='width:9em;'>Attacks:</label></b> {$player->attacks}<br />
-    ";
+    <b><label style='width:9em;'>Endurance:</label></b> {$player->endurance}<br /><br />";
+
 }
+
 
 ?>

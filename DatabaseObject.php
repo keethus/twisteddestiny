@@ -38,6 +38,7 @@ class DatabaseObject {
     public function affected_rows(){
         return mysqli_affected_rows($this->con);
     }
+    
 }
 
 ?>

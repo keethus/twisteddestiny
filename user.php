@@ -10,6 +10,7 @@ class User {
     public $id;
 
     public $username;
+    public $name;
     public $password;
 
     public $level;
@@ -42,6 +43,8 @@ class User {
         $this->id = $user['id'];
 
         $this->username = $user['username'];
+        // Alias
+        $this->name = $user['username'];
         $this->password = $user['password'];
     
         $this->level = $user['level'];
@@ -49,16 +52,36 @@ class User {
     
         $this->health = $user['health'];
         $this->max_health = $user['max_health'];
+
+        $this->coins = $user['coins'];
     
         $this->strength = $user['strength'];
         $this->intelligence = $user['intelligence'];
         $this->endurance = $user['endurance'];
     
-        $this->attacks = $user['attacks'];
-    
-        $this->coins = $user['coins'];
+        $this->attacks = array();
+
+        if($user['attacks']) {
+            $this->attacks = json_decode($user['attacks'], true);
+        }
     }
 
+    public function update() {
+        $attacks = json_encode($this->attacks);
+
+        $this->database->query("UPDATE `users` SET
+            `level`='{$this->level}',
+            `exp`='{$this->exp}',
+            `health`='{$this->health}',
+            `max_health`='{$this->max_health}',
+            `coins`='{$this->coins}',
+            `strength`='{$this->strength}',
+            `intelligence`='{$this->intelligence}',
+            `endurance`='{$this->endurance}',
+            `attacks`='{$attacks}'
+        
+        WHERE `id`='{$this->id}' LIMIT 1");
+    }
 }
 
 

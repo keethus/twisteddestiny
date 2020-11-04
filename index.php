@@ -48,10 +48,30 @@ if(isset($_SESSION['user_id'])) {
             'file' => 'profile.php',
             'function' => 'profile',
         ),
+        'arena' => array(
+            'name' => 'Combat Arena',
+            'file' => 'arena.php',
+            'function' => 'arena',
+        ),
+        'attack_shop' => array(
+            'name' => 'Attack Shop',
+            'file' => 'attackShop.php',
+            'function' => 'attackShop',
+        ),
+        'potion_shop' => array(
+            'name' => 'Potion Shop',
+            'file' => 'potionShop.php',
+            'function' => 'potionShop',
+        ),
         'create_monster' => array(
             'name' => 'Create Monster',
             'file' => 'monsterPages.php',
             'function' => 'createMonster',
+        ),
+        'create_attack' => array(
+            'name' => 'Create Attack',
+            'file' => 'attackPages.php',
+            'function' => 'createAttack',
         ),
     );
 
@@ -84,6 +104,7 @@ if(isset($_SESSION['user_id'])) {
 $output = ob_get_clean();
 
 require('templates/header.php');
+
 
 
 if(isset($_SESSION['user_id'])) {
